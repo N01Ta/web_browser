@@ -11,7 +11,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("project browser") # делаем заголовок приложения
 
         self.view = QWebEngineView() # ядро
-        self.view.load(QUrl("https://www.google.com/")) # загруженная страница
+        self.view.load(QUrl("http://n01ta.space/")) # загруженная страница
         self.view.urlChanged.connect(self.url_changed) # подключаем нашу строку чтоб из нее загружались данные
 
         self.back_button = QPushButton("<-") # кнопка назад, дальше такие же методы
